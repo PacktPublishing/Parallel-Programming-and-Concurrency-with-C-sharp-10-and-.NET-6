@@ -35,7 +35,7 @@ namespace WinFormsParallelLoopApp
                 StringBuilder resultText = new();
                 resultText.Append($"Total file count: {results.FileInfoList.Count}; ");
                 resultText.AppendLine($"Total file size: {results.TotalSize} bytes");
-                resultText.Append($"Last accessed file: {results.LastAccessedFileName} ");
+                resultText.Append($"Last written file: {results.LastWrittenFileName} ");
                 resultText.Append($"at {results.LastFileWriteTime}");
                 FolderResultsTextBox.Text = resultText.ToString();
             }
