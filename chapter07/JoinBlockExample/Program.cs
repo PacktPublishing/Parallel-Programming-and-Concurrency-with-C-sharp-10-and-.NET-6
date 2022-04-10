@@ -1,0 +1,3 @@
+﻿using JoinBlockExample;
+
+DataJoiner.JoinData();
