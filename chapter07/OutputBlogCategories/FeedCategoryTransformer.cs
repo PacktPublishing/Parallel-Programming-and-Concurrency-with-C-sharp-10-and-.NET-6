@@ -8,10 +8,10 @@ namespace OutputBlogCategories
         public static async Task GetCategoriesForFeed(string url)
         {
             // Downloads the requested blog posts.
-            var downloadFeed = new TransformBlock<string, IEnumerable<SyndicationItem>>(uri =>
+            var downloadFeed = new TransformBlock<string, IEnumerable<SyndicationItem>>(url =>
             {
-                Console.WriteLine("Fetching feed from '{0}'...", uri);
-                return RssFeedService.GetFeedItems(uri);
+                Console.WriteLine("Fetching feed from '{0}'...", url);
+                return RssFeedService.GetFeedItems(url);
             });
 
             // Aggregates the categories from all the posts.
@@ -43,7 +43,7 @@ namespace OutputBlogCategories
                 return categories.Select(c => c.Name);
             });
 
-            // Prints the upper-cased unique categroies to the console.
+            // Prints the upper-cased unique categories to the console.
             var printCategoryInCaps = new ActionBlock<string>(categoryName =>
             {
                 Console.WriteLine($"Found CATEGORY {categoryName.ToUpper()}");
