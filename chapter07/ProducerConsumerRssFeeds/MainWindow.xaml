@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProducerConsumerRssFeeds"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="1080">
     <Grid>
+        <ListView x:Name="mainListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="500"/>
+                        </Grid.ColumnDefinitions>
 
+                        <TextBlock Grid.Column="0" Text="{Binding PostDate}" Margin="3"/>
+                        <TextBox IsReadOnly="True" Grid.Column="1" Text="{Binding Categories}" Margin="3" TextWrapping="Wrap"/>
+                        <TextBox IsReadOnly="True" Grid.Column="2" Text="{Binding PostContent}" Margin="3"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Window>
