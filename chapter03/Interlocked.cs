@@ -5,10 +5,12 @@ public class InterlockedSample
     public void PerformCalculations()
     {
         _runningTotal = 3;
-        Parallel.Invoke(async () => {
-            await AddValue();
-        }, async () => {
-            await MultiplyValue();
+        Parallel.Invoke(() =>
+        {
+            AddValue().Wait();
+        }, () =>
+        {
+            MultiplyValue().Wait();
         });
         Console.WriteLine($"Running total is {_runningTotal}");
     }
