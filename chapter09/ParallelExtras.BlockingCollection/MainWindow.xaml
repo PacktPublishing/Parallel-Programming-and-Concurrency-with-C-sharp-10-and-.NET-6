@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
+        <ComboBox x:Name="LettersComboBox"
+                  Grid.Row="0" Grid.Column="0"
+                  Margin="4">
+            <ComboBoxItem Content="A"/>
+            <ComboBoxItem Content="D"/>
+            <ComboBoxItem Content="F"/>
+            <ComboBoxItem Content="G"/>
+            <ComboBoxItem Content="M"/>
+            <ComboBoxItem Content="O"/>
+            <ComboBoxItem Content="A"/>
+            <ComboBoxItem Content="T"/>
+            <ComboBoxItem Content="W"/>
+        </ComboBox>
+        <Button Grid.Row="0" Grid.Column="1"
+                Margin="4" Content="Load Words"
+                Click="Button_Click"/>
+        <ListView x:Name="WordsListView" Margin="4"
+                  Grid.Row="1" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>

@@ -11,4 +11,10 @@
     <PackageReference Include="ParallelExtensionsExtras.NetFxStandard" Version="1.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="ulysses.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
