@@ -18,19 +18,6 @@
             }
             _pdf = new ImposterPdfData(newData);
         }
-        public void PrependString(string data)
-        {
-            string newData;
-            if (_pdf == null)
-            {
-                newData = data;
-            }
-            else
-            {
-                newData = data + Environment.NewLine + _pdf.PlainText;
-            }
-            _pdf = new ImposterPdfData(newData);
-        }
         public string GetPdfAsString()
         {
             if (_pdf != null)

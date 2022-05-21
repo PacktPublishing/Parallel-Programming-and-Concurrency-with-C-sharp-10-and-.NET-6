@@ -12,12 +12,12 @@ Parallel.For(0, 15, async (i) =>
         parser.AppendString(DateTime.UtcNow.ToShortDateString());
         Console.WriteLine($"{parser.GetPdfAsString()}");
         Console.WriteLine($"Parser count: {pool.WorkerCount}");
-        await Task.Delay(15);
+        await Task.Delay(100);
     }
     finally
     {
         pool.Return(parser);
-        await Task.Delay(200);
+        await Task.Delay(250);
     }
 });
 

@@ -4,7 +4,7 @@ namespace ConcurrentBag.PdfProcessor
 {
     public class PdfWorkerPool
     {
-        private ConcurrentBag<PdfParser> _workerPool = new ConcurrentBag<PdfParser>();
+        private ConcurrentBag<PdfParser> _workerPool = new();
         public PdfWorkerPool()
         {
             // Add initial worker
