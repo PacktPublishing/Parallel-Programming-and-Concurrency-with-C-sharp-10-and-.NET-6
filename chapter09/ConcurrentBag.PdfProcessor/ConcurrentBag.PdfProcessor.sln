@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentBag.PdfProcessor", "ConcurrentBag.PdfProcessor.csproj", "{2C89FFA3-4BD8-4ABC-8121-92AF8ACDF948}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C89FFA3-4BD8-4ABC-8121-92AF8ACDF948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C89FFA3-4BD8-4ABC-8121-92AF8ACDF948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C89FFA3-4BD8-4ABC-8121-92AF8ACDF948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C89FFA3-4BD8-4ABC-8121-92AF8ACDF948}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A36A352-D1FA-4693-91CD-82487A16DF78}
+	EndGlobalSection
+EndGlobal
