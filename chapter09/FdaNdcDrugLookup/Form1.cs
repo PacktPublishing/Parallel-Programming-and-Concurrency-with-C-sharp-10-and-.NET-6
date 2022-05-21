@@ -15,6 +15,7 @@ namespace FdaNdcDrugLookup
 
             await Task.WhenAll(t1, t2);
             btnLookup.Enabled = true;
+            btnLoad.Enabled = false;
         }
 
         private void btnLookup_Click(object sender, EventArgs e)
