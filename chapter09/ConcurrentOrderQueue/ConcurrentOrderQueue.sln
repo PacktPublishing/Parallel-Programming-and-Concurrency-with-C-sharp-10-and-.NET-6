@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentOrderQueue", "\Mac\Home\Documents\GitHub\Parallel-Programming-and-Concurrency-with-C-10-and-.NET6\chapter09\ConcurrentOrderQueue\ConcurrentOrderQueue.csproj", "{3ECEE068-73BB-4456-8305-A55C495C6DE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3ECEE068-73BB-4456-8305-A55C495C6DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECEE068-73BB-4456-8305-A55C495C6DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECEE068-73BB-4456-8305-A55C495C6DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECEE068-73BB-4456-8305-A55C495C6DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29258419-2E43-4D31-833F-FEFE0C1FFDDE}
+	EndGlobalSection
+EndGlobal
