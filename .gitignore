@@ -11,6 +11,9 @@
 *.sln.docstates
 *.DS_Store
 
+# Avoid possible copyright issues in some countries
+ulysses.txt
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
