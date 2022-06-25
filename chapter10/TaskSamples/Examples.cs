@@ -2,6 +2,7 @@
 {
     public class Examples
     {
+        private List<Order> _sharedOrders;
         public void ProcessOrders(List<Order> orders, int customerId)
         {
             Task<List<Order>> processOrdersTask = Task.Run(() => PrepareOrders(orders));
@@ -37,6 +38,7 @@
         private List<Order> PrepareOrders(List<Order> orders)
         {
             // TODO: Prepare orders here
+            _sharedOrders = orders;
             return orders;
         }
 
