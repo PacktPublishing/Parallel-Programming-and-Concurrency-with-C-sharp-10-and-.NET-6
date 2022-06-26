@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancellationPatterns", "\Mac\Home\Documents\GitHub\Parallel-Programming-and-Concurrency-with-C-10-and-.NET6\chapter11\CancellationPatterns\CancellationPatterns.csproj", "{A80EEC02-16B6-463D-A0E7-1885665B187A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A80EEC02-16B6-463D-A0E7-1885665B187A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80EEC02-16B6-463D-A0E7-1885665B187A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80EEC02-16B6-463D-A0E7-1885665B187A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80EEC02-16B6-463D-A0E7-1885665B187A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2445B23D-B357-430F-929E-ED1F22564402}
+	EndGlobalSection
+EndGlobal
