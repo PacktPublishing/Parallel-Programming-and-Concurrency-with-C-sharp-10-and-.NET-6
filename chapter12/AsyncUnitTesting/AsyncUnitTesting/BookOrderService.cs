@@ -2,7 +2,7 @@
 {
     public class BookOrderService
     {
-        public async Task<List<string>> GetCustomerOrderNumbers(int customerId)
+        public async Task<List<string>> GetCustomerOrdersAsync(int customerId)
         {
             if (customerId < 1)
             {
