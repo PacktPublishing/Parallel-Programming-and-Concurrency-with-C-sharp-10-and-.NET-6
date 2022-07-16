@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryExample", "\Mac\Home\Documents\GitHub\Parallel-Programming-and-Concurrency-with-C-10-and-.NET6\chapter12\MemoryExample\MemoryExample\MemoryExample.csproj", "{9B074849-AB69-4205-96FF-7D0DE7954DAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryExample.Tests", "\Mac\Home\Documents\GitHub\Parallel-Programming-and-Concurrency-with-C-10-and-.NET6\chapter12\MemoryExample\MemoryExample.Tests\MemoryExample.Tests.csproj", "{3367FBC8-87A1-4786-9AE3-754B733BD986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B074849-AB69-4205-96FF-7D0DE7954DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B074849-AB69-4205-96FF-7D0DE7954DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B074849-AB69-4205-96FF-7D0DE7954DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B074849-AB69-4205-96FF-7D0DE7954DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3367FBC8-87A1-4786-9AE3-754B733BD986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3367FBC8-87A1-4786-9AE3-754B733BD986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3367FBC8-87A1-4786-9AE3-754B733BD986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3367FBC8-87A1-4786-9AE3-754B733BD986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E0F56B9-BCFB-4C27-B502-4CC91D5B8EBE}
+	EndGlobalSection
+EndGlobal
