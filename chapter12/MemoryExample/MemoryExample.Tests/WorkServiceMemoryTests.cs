@@ -1,7 +1,6 @@
 using JetBrains.dotMemoryUnit;
-using System.Drawing;
 
-[assembly: JetBrains.dotMemoryUnit.SuppressXUnitOutputExceptionAttribute]
+[assembly: SuppressXUnitOutputExceptionAttribute]
 namespace MemoryExample.Tests
 {
     public class WorkServiceMemoryTests

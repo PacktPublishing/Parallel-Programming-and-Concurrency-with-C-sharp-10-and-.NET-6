@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace MemoryExample
+﻿namespace MemoryExample
 {
     public class WorkService
     {
