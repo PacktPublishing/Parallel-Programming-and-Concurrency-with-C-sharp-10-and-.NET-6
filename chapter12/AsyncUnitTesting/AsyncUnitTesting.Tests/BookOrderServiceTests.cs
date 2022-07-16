@@ -6,22 +6,24 @@ namespace AsyncUnitTesting.Tests
         public void GetCustomerOrdersAsync_Returns_Orders_For_Valid_CustomerId_Sync()
         {
             var service = new BookOrderService();
-            List<string> orders = service.GetCustomerOrdersAsync(5).GetAwaiter().GetResult();
+            int customerId = 5;
+            List<string> orders = service.GetCustomerOrdersAsync(customerId).GetAwaiter().GetResult();
 
             Assert.NotNull(orders);
             Assert.True(orders.Any());
-            Assert.StartsWith("5", orders[0]);
+            Assert.StartsWith(customerId.ToString(), orders[0]);
         }
 
         [Fact]
         public async Task GetCustomerOrdersAsync_Returns_Orders_For_Valid_CustomerId()
         {
             var service = new BookOrderService();
-            var orders = await service.GetCustomerOrdersAsync(3);
+            int customerId = 3;
+            var orders = await service.GetCustomerOrdersAsync(customerId);
 
             Assert.NotNull(orders);
             Assert.True(orders.Any());
-            Assert.StartsWith("3", orders[0]);
+            Assert.StartsWith(customerId.ToString(), orders[0]);
         }
 
         [Fact]
