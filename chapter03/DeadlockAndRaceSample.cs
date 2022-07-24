@@ -8,7 +8,28 @@ public class DeadlockSample
         _data = new List<string> { "First", "Second", "Third" };
     }
 
-    public void ProcessData()
+    public async Task ProcessData()
+    {
+        lock (_lock)
+        {
+            foreach(var item in _data)
+            {
+                Console.WriteLine(item);
+            }
+            await AddData();
+        }
+    } 
+
+    private async Task AddData() 
+    { 
+        lock (_lock) 
+        { 
+            _data.AddRange(GetMoreData()); 
+            await Task.Delay(100); 
+        }
+    } 
+
+    public void ProcessDataWithMonitor()
     {
         lock (_lock)
         {
@@ -17,11 +38,11 @@ public class DeadlockSample
                 Console.WriteLine(item);
             }
 
-            AddData();
+            AddDataWithMonitor();
         }
     }
 
-    private void AddData()
+    private void AddDataWithMonitor()
     {
         if (Monitor.TryEnter(_lock, 1000))
         {  
