@@ -13,7 +13,7 @@
             {
                 foreach (var ex in ae.InnerExceptions)
                 {
-                    Console.WriteLine($"Exception encoutered while processing voters. Message: {ex.Message}");
+                    Console.WriteLine($"Exception encountered while processing voters. Message: {ex.Message}");
                 }
             }
         }
