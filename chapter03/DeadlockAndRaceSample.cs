@@ -5,10 +5,7 @@ public class DeadlockSample
 
     public DeadlockSample()
     {
-        _data = new List<string>();
-        _data.Add("First");
-        _data.Add("Second");
-        _data.Add("Third");
+        _data = new List<string> { "First", "Second", "Third" };
     }
 
     public void ProcessData()
