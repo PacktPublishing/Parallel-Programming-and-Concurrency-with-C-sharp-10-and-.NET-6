@@ -25,5 +25,27 @@
             }
             // Add adult to a voter database and process their data.
         }
+        private SpinLock _spinLock = new SpinLock();
+        internal void ProcessAdultsWhoVoteWithPlinq2(List<Person> people)
+        {
+            var adults = people.AsParallel().Where(p => p.Age > 17);
+            adults.ForAll(ProcessVoterActions2);
+        }
+        private void ProcessVoterActions2(Person adult)
+        {
+            var hasLock = false;
+            if (adult.Age > 120)
+            {
+                try
+                {
+                    _spinLock.Enter(hasLock);
+                    adult.Age = 120;
+                }
+                finally
+                {
+                    if (hasLock) _spinLock.Exit();
+                }
+            }
+        } 
     }
 }
