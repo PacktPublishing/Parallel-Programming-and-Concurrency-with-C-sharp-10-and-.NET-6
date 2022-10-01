@@ -91,8 +91,8 @@ public class DeadlockSample
     public async Task PerformCalculations()
     {
         _runningTotal = 3;
-        await MultiplyValue().ContinueWith(async (Task) => {
-            await AddValue();
+        await MultiplyValue().ContinueWith((Task) => {
+            AddValue().Wait();
             });
         Console.WriteLine($"Running total is {_runningTotal}");
     }
